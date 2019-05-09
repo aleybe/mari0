@@ -1,7 +1,7 @@
 --[[
 	PHYSICS LIBRARY THING
-	WRITTEN BY MAURICE GUÉGAN FOR MARI0
-	DON'T STEAL MY SHIT
+	WRITTEN BY MAURICE GUï¿½GAN FOR MARI0
+	DON'T STEAL MY ****
 	Licensed under the same license as the game itself.
 ]]--
 
@@ -218,7 +218,7 @@ function checkcollision(v, t, h, g, j, i, dt, passed) --v: b1table | t: b2table 
 				end
 				
 			else 
-				--We're fucked, it's a diagonal collision! run!
+				--We're ****ed, it's a diagonal collision! run!
 				--Okay actually let's take this slow okay. Let's just see if we're moving faster horizontally than vertically, aight?
 				local grav = yacceleration
 				if self and self.gravity then
@@ -714,7 +714,7 @@ end
 
 function portalcoords(x, y, speedx, speedy, width, height, rotation, animationdirection, entryportalX, entryportalY, entryportalfacing, exitportalX, exitportalY, exitportalfacing, self, live)
 	--uuuuuuuuuuuuuh
-	--rewrite this so it takes the CENTER of shit and makes stuff according to that, also relative offsets
+	--rewrite this so it takes the CENTER of **** and makes stuff according to that, also relative offsets
 	x = x + width/2
 	y = y + height/2
 	
