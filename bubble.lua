@@ -1,6 +1,6 @@
 bubble = class:new()
 
---"FUCKING BUBBLES!!!!"
+--"****ING BUBBLES!!!!"
 --          -The Nostalgia Critic
 
 function bubble:init(x, y)

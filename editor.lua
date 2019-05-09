@@ -72,7 +72,7 @@ function editor_load()
 	guielements["savebutton2"].bordercolor = {1, 0, 0}
 	guielements["savebutton2"].bordercolorhigh = {1, 0.5, 0.5}
 
-	--get current description and shit
+	--get current description and ****
 	local mappackname = ""
 	local mappackauthor = ""
 	local mappackdescription = ""
@@ -876,7 +876,7 @@ function editor_mousepressed(x, y, button)
 			local r = map[tileX][tileY]
 			if #r > 1 then
 				local tile = r[2]
-				--LIST OF TILES THAT DO SHIT
+				--LIST OF TILES THAT DO ****
 				if rightclickvalues[entitylist[r[2]]] then
 					rightclickmenuX = x
 					rightclickmenuY = y

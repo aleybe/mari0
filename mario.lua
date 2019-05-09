@@ -119,6 +119,8 @@ function mario:init(x, y, i, animation, size, t)
 	--OTHER STUFF!
 	self.controlsenabled = true
 
+	self.currentTimeSince = 0
+
 	self.runframe = 3
 	self.swimframe = 1
 	self.climbframe = 1
@@ -226,7 +228,34 @@ function mario:init(x, y, i, animation, size, t)
 	self:setquad()
 end
 
+function mario:changeColor(dt)
+	
+	-- MARIO COLORS --
+	------------------
+	--1: hat, pants (red)
+	--2: shirt, shoes (brown-green)
+	--3: skin (yellow-orange)
+
+	timeToChange = 1
+
+	self.currentTimeSince = self.currentTimeSince + dt
+
+	if self.currentTimeSince > timeToChange then
+
+		customColor = {{math.random(0, 255)/255, math.random(0, 255)/255, math.random(0, 255)/255},
+					   {math.random(0, 255)/255, math.random(0, 255)/255, math.random(0, 255)/255}, 
+					   {math.random(0, 255)/255, math.random(0, 255)/255, math.random(0, 255)/255}}
+		
+		changingcolors = {customColor[1], customColor[2], customColor[3]}
+
+		self.colors = changingcolors
+		self.currentTimeSince = 0
+	end
+
+end 
+
 function mario:update(dt)
+	self:changeColor(dt)
 	self.passivemoved = false
 	--rotate back to 0 (portals)
 	self.rotation = math.fmod(self.rotation, math.pi*2)
@@ -805,7 +834,7 @@ function mario:update(dt)
 		end
 	end
 
-	--vine controls and shit
+	--vine controls and ****
 	if self.vine then
 
 		self.animationstate = "climbing"
@@ -2097,7 +2126,7 @@ function mario:ceilcollide(a, b)
 		end
 	end
 
-	if a == "mushroom" or a == "oneup" or a == "star" or a == "flower" then --STUFF THAT SHOULDN'T DO SHIT
+	if a == "mushroom" or a == "oneup" or a == "star" or a == "flower" then --STUFF THAT SHOULDN'T DO ****
 		return false
 	elseif a == "castlefirefire" or a == "fire" or a == "plant" or a == "goomba" or a == "koopa" or a == "bulletbill" or a == "bowser" or a == "cheep" or a == "flyingfish" or a == "upfire" or a == "lakito" or a == "squid" or a == "hammer" or a == "hammerbro" then --STUFF THAT KILLS
 		if self.invincible then
@@ -2245,7 +2274,7 @@ function mario:starcollide(a, b)
 			addpoints(firepoints[a], self.x, self.y)
 		end
 		return true
-	--enemies (and stuff) that don't do shit
+	--enemies (and stuff) that don't do ****
 	elseif a == "upfire" or a == "fire" or a == "hammer" or a == "fireball" or a == "castlefirefire" then
 		return true
 	end

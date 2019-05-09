@@ -532,7 +532,7 @@ function game_update(dt)
 					end
 				end
 
-				--just force that shit
+				--just force that ****
 				if not levelfinished then
 					if fastestplayer.x > splitxscroll[split] + width - scrollingcomplete then
 						splitxscroll[split] = splitxscroll[split] + superscroll*dt
@@ -3213,7 +3213,7 @@ function getTile(x, y, portalable, portalcheck, facing) --returns masktable valu
 		end
 	end
 
-	--bonusstage thing for keeping it from fucking up.
+	--bonusstage thing for keeping it from ****ing up.
 	if bonusstage then
 		if y == 15 and (x == 4 or x == 6) then
 			if portalcheck then

@@ -80,9 +80,7 @@ function love.load()
 
 	love.graphics.clear()
 	love.graphics.setColor(0.4, 0.4, 0.4)
-	loadingtexts = {"reticulating splines..", "loading..", "booting glados..", "growing potatoes..", "voting against acta..", "rendering important stuff..",
-					"baking cake..", "happy explosion day..", "raising coolness by 20 percent..", "yay facepunch..", "stabbing myself..", "sharpening knives..",
-					"tanaka, thai kick..", "loading game genie.."}
+	loadingtexts = {"loading..", "making memes..", "boring.."}
 	loadingtext = loadingtexts[math.random(#loadingtexts)]
 	properprint(loadingtext, 25*8*scale-string.len(loadingtext)*4*scale, 108*scale)
 	love.graphics.present()
@@ -495,8 +493,8 @@ function love.load()
 		end
 	end
 
-	logo = love.graphics.newImage("graphics/stabyourself.png")
-	logoblood = love.graphics.newImage("graphics/stabyourselfblood.png")
+	-- logo = love.graphics.newImage("graphics/stabyourself.png")
+	-- logoblood = love.graphics.newImage("graphics/stabyourselfblood.png")
 
 	--GUI
 	checkboximg = love.graphics.newImage("graphics/GUI/checkbox.png")
@@ -614,7 +612,7 @@ function love.load()
 	portalprojectileimg = love.graphics.newImage("graphics/" .. graphicspack .. "/portalprojectile.png")
 	portalprojectileparticleimg = love.graphics.newImage("graphics/" .. graphicspack .. "/portalprojectileparticle.png")
 
-	--Menu shit
+	--Menu ****
 	huebarimg = love.graphics.newImage("graphics/" .. graphicspack .. "/huebar.png")
 	huebarmarkerimg = love.graphics.newImage("graphics/" .. graphicspack .. "/huebarmarker.png")
 	volumesliderimg = love.graphics.newImage("graphics/" .. graphicspack .. "/volumeslider.png")

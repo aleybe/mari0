@@ -111,7 +111,7 @@ function shaders:init(numpasses)
 					end
 					self.effects[filename] = {effect, str, defs}
 				else
-					print(string.format("shader (%s) is fucked up, yo:\n", filename), effect)
+					print(string.format("shader (%s) is ****ed up, yo:\n", filename), effect)
 				end
 			end
 		end
