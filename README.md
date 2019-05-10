@@ -1,4 +1,4 @@
-#STEM Demo
+# STEM Demo
 
 ![](https://j.gifs.com/RO17RR.gif)
 
