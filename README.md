@@ -1,6 +1,6 @@
 #STEM Demo
 
-[![](https://gifs.com/gif/RO17RR)]
+![](https://j.gifs.com/RO17RR.gif)
 
 # mari0
 Runs on LÖVE 11.2
