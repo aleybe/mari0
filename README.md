@@ -1,6 +1,6 @@
 #STEM Demo
 
-[![Demo CountPages alpha](https://giant.gfycat.com/MindlessHappygoluckyHornet.webm)]
+[![](https://gifs.com/gif/RO17RR)]
 
 # mari0
 Runs on LÖVE 11.2
